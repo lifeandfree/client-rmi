@@ -1,17 +1,19 @@
 plugins {
     id 'java'
+    id 'idea'
 }
 
 group 'ru.innopolis'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 1.8
+sourceCompatibility = 1.11
+targetCompatibility = 1.11
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    compile group: 'org.springframework', name: 'spring-remoting', version: '2.0.8'
-    compile group: 'org.springframework', name: 'spring-context', version: '4.3.25.RELEASE'
+    implementation group: 'org.springframework', name: 'spring-remoting', version: '2.0.8'
+    implementation group: 'org.springframework', name: 'spring-context', version: '5.2.7.RELEASE'
 }
